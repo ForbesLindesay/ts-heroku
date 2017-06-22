@@ -1,0 +1,48 @@
+{
+  "name": "ts-heroku",
+  "version": "1.0.0",
+  "description": "Typescript client for heroku",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files":[
+    "lib/BaseHerokuAPIClient.d.ts",
+    "lib/BaseHerokuAPIClient.js",
+    "lib/index.d.ts",
+    "lib/index.js",
+    "lib/schema.d.ts",
+    "lib/schema.js"
+  ],
+  "scripts": {
+    "build": "tsc && node lib/build-client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ForbesLindesay/ts-heroku.git"
+  },
+  "keywords": [
+    "heroku",
+    "typescript"
+  ],
+  "author": "ForbesLindesay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ForbesLindesay/ts-heroku/issues"
+  },
+  "homepage": "https://github.com/ForbesLindesay/ts-heroku#readme",
+  "devDependencies": {
+    "@types/json-schema": "^4.0.0",
+    "json-schema-ref-parser": "^3.1.2",
+    "json-schema-to-typescript": "^4.4.0",
+    "prettier": "^1.4.4",
+    "rimraf": "^2.6.1",
+    "then-request": "^3.1.0",
+    "typescript": "^2.4.0"
+  },
+  "dependencies": {
+    "@types/node": "^8.0.1",
+    "@types/uri-templates": "^0.1.28",
+    "heroku-client": "^3.0.2",
+    "uri-templates": "^0.2.0"
+  }
+}
